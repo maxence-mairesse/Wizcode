@@ -15,7 +15,7 @@ const Header = () => {
         <h1>
           <Link to="/">
             {' '}
-            <img src="../../public/logo.png" alt="logo du site" />{' '}
+            <img src="../../../public/logo.png" alt="logo du site" />{' '}
           </Link>
         </h1>
       </div>

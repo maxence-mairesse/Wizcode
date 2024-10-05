@@ -1,0 +1,24 @@
+
+.Home{
+
+.presentation{
+  height: calc(100vh - 10vh);
+  img{
+    width:50%;
+    margin:auto;
+
+  }
+  h3{
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:1em auto;
+  }
+  h4{background: linear-gradient(to right,#ff914d, #ff7b2d, #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;}
+}
+
+
+}

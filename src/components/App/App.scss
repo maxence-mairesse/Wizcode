@@ -1,9 +1,16 @@
+@font-face {
+	font-family: "HK Grotesk";
+	src: url("../../../public/fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 .App {
 	min-height: 100vh;
-	background-color: #30353e;
+	background-color: #0f1112;
 	text-align: center;
 	color: aliceblue;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arialxs, serif;
+	font-family: "HK Grotesk", sans-serif ;
 
 
 }

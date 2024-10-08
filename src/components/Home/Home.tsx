@@ -1,9 +1,12 @@
 import './Home.scss';
 import { Link } from 'react-router-dom';
+import { useAppSelector } from '../../hook/redux';
 
 const Home = () => {
+  const isopen: boolean = useAppSelector((state) => state.HomeReducer.OpenMenu);
+
   return (
-    <div className="Home">
+    <div className={isopen ? 'hidden' : 'Home'}>
       <div className="presentation">
         <div className="image">
           <img src="../../../logo.png" alt="logo site" />{' '}

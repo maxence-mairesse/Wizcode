@@ -44,7 +44,8 @@ const Home = () => {
               </li>
               <li>Objectif</li>
               <li>
-                On conçoit et développe des solutions adaptées à vos besoins.
+                nous concevons et développons des solutions adaptées à vos
+                besoins.
               </li>
             </ul>
           </div>
@@ -55,8 +56,8 @@ const Home = () => {
               </li>
               <li>Communication</li>
               <li>
-                100 % à distance, on communique et on organise les objectifs en
-                utilisant la méthode Agile.
+                100 % à distance, nous communiquons et on organisons les
+                objectifs en utilisant la méthode Agile.
               </li>
             </ul>
           </div>

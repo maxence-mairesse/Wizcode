@@ -9,8 +9,7 @@ const Home = () => {
     <div className={isopen ? 'hidden' : 'Home'}>
       <div className="presentation">
         <div className="image">
-          <img src="../../../logo.png" alt="logo site" />{' '}
-          <h2>Wizarding Code</h2>
+          <img src="./logo.png" alt="logo site" /> <h2>Wizard Code</h2>
         </div>
         <h3>Maxence Mairesse</h3>
         <h4>Développeur Fullstack Freelance</h4>

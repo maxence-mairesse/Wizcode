@@ -4,10 +4,10 @@ const Prestations = () => {
   return (
     <div className="Prestations">
       <div className="entete">
-        <h2>Nos prestations de service</h2>
+        <h2>prestations de service</h2>
         <h3>
           {' '}
-          Notre mission, concevoir et développer le produit qui vous aidera a
+          Notre mission, concevoir et développer le produit qui vous aidera à
           passer au niveau suivant{' '}
         </h3>
       </div>
@@ -28,7 +28,7 @@ const Prestations = () => {
           </li>
           <li>
             <div>
-              <i className="fa-solid fa-paintbrush" />
+              <i className="fa-solid fa-laptop-code" />
             </div>
             <h4> Intégration web </h4>
             <p>
@@ -39,7 +39,7 @@ const Prestations = () => {
 
           <li>
             <div>
-              <i className="fa-solid fa-paintbrush" />
+              <i className="fa-solid fa-code" />
             </div>
             <h4> Développement </h4>
             <p>
@@ -47,12 +47,22 @@ const Prestations = () => {
               mission pour poursuivre ou améliorer un projet déjà existant.
             </p>
           </li>
+
+          <li>
+            <div>
+              <i className="fa-solid fa-magnifying-glass" />
+            </div>
+            <h4> Optimisation SEO </h4>
+            <p>
+              Audit du produit et amélioration pour optimiser le référencement{' '}
+            </p>
+          </li>
         </ul>
 
         <h3> vous êtes convaincus ?</h3>
 
         <div className="contact">
-          <h4>Contactez moi Malt</h4>
+          <h4>Contactez moi sur Malt</h4>
           <a href="https://www.malt.fr/profile/maxencemairesse01">
             Voir profil Malt
           </a>

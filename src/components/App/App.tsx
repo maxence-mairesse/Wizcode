@@ -1,9 +1,9 @@
-import logo from '../../assets/logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import './App.scss';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
 import Error from '../Error/Error';
-import './App.scss';
-import { Routes, Route } from 'react-router-dom';
+import Prestations from '../Presations/Prestations';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/prestations" element={<Prestations />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

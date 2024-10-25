@@ -1,13 +1,17 @@
 import { Link, NavLink } from 'react-router-dom';
 import './Header.scss';
 import { useAppDispatch, useAppSelector } from '../../hook/redux';
-import { toggleMenu } from '../../store/Action/HomeAction';
+import { toggleMenu, clickMenu } from '../../store/Action/HomeAction';
 
 const Header = () => {
   const dispatch = useAppDispatch();
   const isOpen = useAppSelector((state) => state.HomeReducer.OpenMenu);
   const toggleMenuClick = () => {
     dispatch(toggleMenu());
+  };
+
+  const closeMenu = () => {
+    dispatch(clickMenu());
   };
   return (
     <header>
@@ -43,7 +47,7 @@ const Header = () => {
         </button>
         <div className={isOpen ? 'listMenu' : 'Hidden'}>
           <ul className={isOpen ? 'OpenMenu' : 'Hidden'}>
-            <NavLink to="/">
+            <NavLink onClick={closeMenu} to="/">
               <li>
                 <p>
                   <svg
@@ -65,7 +69,7 @@ const Header = () => {
                 <p>Accueil</p>
               </li>
             </NavLink>
-            <NavLink to="/prestations">
+            <NavLink onClick={closeMenu} to="/prestations">
               <li>
                 <p>
                   <svg
@@ -87,7 +91,7 @@ const Header = () => {
                 <p>Prestations</p>
               </li>
             </NavLink>
-            <NavLink to="/competences">
+            <NavLink onClick={closeMenu} to="/competences">
               <li>
                 <p>
                   <svg
@@ -109,7 +113,7 @@ const Header = () => {
                 <p>Compétences</p>
               </li>
             </NavLink>
-            <NavLink to="/tarifs">
+            <NavLink onClick={closeMenu} to="/tarifs">
               <li>
                 <p>
                   <svg
@@ -131,7 +135,10 @@ const Header = () => {
                 <p>Tarifs</p>
               </li>
             </NavLink>
-            <NavLink to="https://maxence-mairesse.fr/#realisation">
+            <NavLink
+              onClick={closeMenu}
+              to="https://maxence-mairesse.fr/#realisation"
+            >
               <li>
                 <p>
                   <svg
@@ -154,7 +161,7 @@ const Header = () => {
                 <p>Portfolio</p>
               </li>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink onClick={closeMenu} to="/contact">
               <li>
                 <p>
                   <svg

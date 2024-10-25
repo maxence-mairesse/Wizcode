@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { toggleMenu } from '../Action/HomeAction';
+import { clickMenu, toggleMenu } from '../Action/HomeAction';
 
 interface HomeInterface {
   OpenMenu: boolean;
@@ -10,9 +10,13 @@ const HomeState: HomeInterface = {
 };
 
 const HomeReducer = createReducer(HomeState, (builder) => {
-  builder.addCase(toggleMenu, (state, action) => {
-    state.OpenMenu = !state.OpenMenu;
-  });
+  builder
+    .addCase(toggleMenu, (state, action) => {
+      state.OpenMenu = !state.OpenMenu;
+    })
+    .addCase(clickMenu, (state, action) => {
+      state.OpenMenu = false;
+    });
 });
 
 export default HomeReducer;

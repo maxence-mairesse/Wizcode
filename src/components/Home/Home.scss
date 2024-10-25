@@ -35,7 +35,7 @@ position: absolute;
     }
 
     h4 {
-      background: linear-gradient(to right, #ff914d, #ff7b2d, #ff5e00);
+      background: linear-gradient(to right, rgb(182, 35, 255), #ff5d00);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
@@ -59,6 +59,7 @@ position: absolute;
         width: 20vw;
         height: 1px;
         border: #ff914d solid 1px;
+
       }
     }
 
@@ -130,14 +131,14 @@ position: absolute;
     }
 
   }
-  hr {
-    width: 90%;
 
-    border: solid 0.3px rgba(255, 133, 55, 0.32);
-    margin-top: 2em;
-  }
   .pourquoi{
+    hr {
+      width: 90%;
 
+      border: solid 0.3px rgba(255, 133, 55, 0.32);
+      margin-top: 3em;
+    }
 padding:1em ;
     h2{
       font-size: 1.5em;
@@ -195,7 +196,7 @@ padding:1em ;
     button{
       color: white;
       font-weight: bold;
-      border: rgba(255, 255, 255, 0.61) solid 1px;
+      border: none;
       padding: 1em;
       border-radius: 2px;
       background-color: #ff7b2d;

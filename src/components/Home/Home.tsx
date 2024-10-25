@@ -126,8 +126,8 @@ const Home = () => {
         <Link to="/presations" className="link">
           En savoir Plus
         </Link>
+        <hr />
       </div>
-      <hr />
       <div className="CV">
         <h2>CV développeur fullstack</h2>
         <h3>Besoin d'en savoir plus sur mon parcours, téléchargez mon cv </h3>

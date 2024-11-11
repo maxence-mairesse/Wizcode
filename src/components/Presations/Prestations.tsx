@@ -59,7 +59,7 @@ const Prestations = () => {
           </li>
         </ul>
 
-        <h3> vous êtes convaincus ?</h3>
+        {/* <h3> vous êtes convaincus ?</h3> */}
 
         <div className="contact">
           <h4>Contactez moi sur Malt</h4>

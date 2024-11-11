@@ -1,19 +1,20 @@
-.Tarifs{
+.Tarifs {
   padding: 5em 1em;
 
-  .entete{
-    h2{
+  .entete {
+    h2 {
       text-align: center;
       font-size: 2em;
       text-transform: uppercase;
       font-weight: bold;
-      background: linear-gradient(to left, rgb(255, 94, 0), rgb(121,121,244));
+      background: linear-gradient(to left, rgb(255, 94, 0), rgb(121, 121, 244));
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 1em;
     }
-    h3{
+
+    h3 {
       display: inline-block;
       font-size: 1em;
       font-weight: bold;
@@ -24,36 +25,80 @@
 
 
   }
-  .blockTarif{
-    h3{
+
+  .blockTarif {
+    h3 {
       font-weight: bold;
       font-size: 1em;
       color: #ff7b2d;
-      margin-top:1em
+      margin-top: 1em
     }
-    h4{
+
+    h4 {
       font-size: 1.5em;
       color: white;
       font-weight: bold;
       margin: .8em 0 1em 0;
     }
-    p{
+
+    p {
       text-align: justify;
       margin-top: 1em;
       font-size: 0.7em;
-      span{
+
+      span {
         font-weight: bold;
       }
     }
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:  2em auto;
+    margin: 2em auto;
     padding: 1em;
     background-color: #111519;
     box-shadow: rgba(0, 0, 0, 0.29) 0px 1px 10px;
     width: 65vw;
     min-height: 15vh;
+  }
+
+  .blockhidden {
+    display: none
+  }
+
+  @media (min-width: 768px) {
+    .entete {
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        margin: 1em;
+        font-size: 1.3em;
+      }
+    }
+    .sectionTarif {
+      display: flex;
+      flex-wrap: wrap;
+
+      .blockhidden{
+        display: block;
+        opacity: 0;
+      }
+      .blockTarif {
+        width: 45vw;
+        h3{
+          font-size: 1.3em;
+        }
+        h4{
+          font-size: 1.5em;
+        }
+        p{
+          font-size: 1em;
+          padding: 0.5em;
+        }
+      }
+    }
   }
 }

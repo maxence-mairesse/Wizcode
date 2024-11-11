@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Error from '../Error/Error';
 import Prestations from '../Presations/Prestations';
 import Tarifs from '../Tarifs/Tarifs';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/tarifs" element={<Tarifs />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

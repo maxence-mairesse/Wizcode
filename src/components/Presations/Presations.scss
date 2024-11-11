@@ -1,35 +1,40 @@
-.Prestations{
+.Prestations {
 
   padding: 5em 1em;
-.entete{
-  h2{
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: linear-gradient(to left, rgb(255, 94, 0), rgb(121,121,244));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-  }
-  h3{
-    text-align: center;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 1em;
+  .entete {
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: linear-gradient(to left, rgb(255, 94, 0), rgb(121, 121, 244));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
+    }
+
+    h3 {
+      text-align: center;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 1em;
+
+    }
   }
-}
-  .service{
+
+  .service {
     margin-top: 5em;
-   h3{
-     font-weight: bold;
-     font-size: 1.5em
-   }
-    ul{
-      li{
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.5em
+    }
+
+    ul {
+      li {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -41,9 +46,17 @@
         background-color: #111519;
         box-shadow: rgba(0, 0, 0, 0.29) 0px 1px 10px;
 
-        p{font-size: 0.8em};
+        h4 {
+          font-weight: bold;
+          font-size: 1em;
+        }
 
-        div{
+        p {
+          font-size: 0.8em
+        }
+      ;
+
+        div {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -57,21 +70,24 @@
     }
   }
 
-  .contact{
+  .contact {
     border-radius: 3px;
     padding: 1em;
-    h4{
+
+    h4 {
       font-weight: bold;
       font-size: 1.5em;
     }
+
     background-image: url("../../../geo.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 80%;
     margin: 3em auto 0 auto;
     background-color: #a223ffc2;
-    a{
-      background: linear-gradient(to left, rgb(255, 94, 0), rgb(121,121,244));
+
+    a {
+      background: linear-gradient(to left, rgb(255, 94, 0), rgb(121, 121, 244));
       display: inline-block;
       margin-top: 1em;
       padding: .5em;
@@ -79,4 +95,53 @@
       box-shadow: 0px 2px 10px rgb(0 0 0 / 69%);
     }
   }
+
+  @media (min-width: 768px) {
+    .entete{
+      h2{
+        font-size: 2em;
+      }
+      h3{
+        font-size: 1.3em;
+      }
+    }
+    .service {
+      h3{ font-size: 1.5em;
+        }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          width: 45vw;
+
+          h4 {
+            font-size: 1.3em;
+          }
+
+          p {
+            font-size: 1em
+          }
+
+          div {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+    .contact {
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        width: 20vw;
+      }
+    }
+  }
+
 }
